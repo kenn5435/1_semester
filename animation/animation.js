@@ -1,6 +1,6 @@
 (function () {
 
-    var aboutEl = $('section.omMig'),
+    var aboutEl = $('div.about'),
         aboutElOffset = aboutEl.offset().top / 2,
         documentEl = $(document);
 

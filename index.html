@@ -2,111 +2,83 @@
 <html lang="da">
 
 <head>
+    <!--- Google fonte --->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="mainstyle.css">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-
-
     <title>Portfolio</title>
+
+
 </head>
 
 <body>
-    <div id="container">
-
-        <header>
-            <div class="nav">
-                <ul>
-                    <li><a href="#hjem">HJEM</a></li>
-                    <li><a href="#">OM MIG</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">KONTAKT</a></li>
-                </ul>
-            </div>
-            <div class="letsTalk">
-                <a href="#">LET'S<br>TALK</a>
-            </div>
-        </header>
-
-        <section id="hjem">
-            <div class="sectionwrapper">
-                <div class="column">
-                    <img class="logo" src="logo/logo_hvid.png" alt="logo">
-                    <h1>Velkommen Til Mit 1. Semester Som Multimediedesigner.</h1>
-                </div>
-            </div>
-        </section>
-
-        <section id="om">
-            <div class="sectionwrapper">
-                <div class="column">
-                    <h2>Om mig</h2>
-
-                    <p class="txt">Mit navn er Kenny Kennedy, jeg er 24 år og studere til dagligt på Kea - Københavns Erhvervs Akademi som multimediedesigner.</p>
-
-                    <p class="txt"> Det har altid været en kæmpe passion for mig at være kreativ i form udvikling af websites, grafisk design og prodotyper af apps.</p>
-
-                    <p class="txt">Jeg er frisk person som ikke bare giver op på sine projekter, jeg elsker at udvikle mig både fagligt og personligt.</p>
-
-                    <button class="btn-1">Se Cv'et</button>
-                </div>
-
-                <div class="column_img">
-                    <img src="logo/mig.png" alt="Kenny Kennedy">
-                </div>
-            </div>
-
-        </section>
-
-        <section id="portfolio">
-            <div class="sectionwrapper">
-                <div class="column">
-                    <h2 class="white">Portfolio</h2>
-                </div>
-                <!--- her sættes portfolio ind -->
-
-                <div class="column">
-                    <p class="white"><br>Portfolio er på vej<br><br> Portfolio er på vej<br><br>
-                    </p>
-
-                    <p class="white">Portfolio er på vej<br><br> Portfolio er på vej<br><br>
-                    </p>
-
-                    <p class="white">Portfolio er på vej<br><br> Portfolio er på vej<br><br>
-                    </p>
-                </div>
-            </div>
-        </section>
+    <header>
+        <h2><a href="index.html"><img src="logo/logo_hvid.png"></a></h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-        <section id="kontakt">
-            <div class="sectionwrapper">
-                <div class="column">
-                    <h2 class="white">Kontakt os</h2>
-                </div>
-                <div class="column">
-                    <p class="white">Har du løst til at sammearbejde med os ? <br>Så udfyld venligts feltet neden</p>
-
-                    <form class="form">
-                        <input type="email" class="form__field" placeholder="Your E-Mail Address" />
-                        <button type="button" class="btn btn--primary btn--inside uppercase">Subscribe</button>
-                    </form>
-
-                    <div class="container__item container__item--bottom">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="miteget.js"></script>
-
+    <div class="hero">
+        <div class="background-image" style="background-image: url(img/HeroImg.png);"></div>
+        <h1>Velkommen til mit </h1>
+        <h3>1. semester som multimediedeisnger</h3>
     </div>
+
+    <section class="omMig content hidden">
+
+        <div class="left">
+            <h1>Om mig</h1>
+            <p>Mit navn er Kenny Kennedy, jeg er 24 år og studere til dagligt på Kea - Københavns Erhvervs Akademi som multimediedesigner. <br><br>Det har altid været en kæmpe passion for mig at være kreativ i form udvikling af websites, grafisk design og prodotyper af apps.<br><br> Jeg er frisk person som ikke bare giver op på sine projekter, jeg elsker at udvikle mig både fagligt og personligt. </p>
+        </div>
+
+        <div class="middel">
+            <h1>Hvorfor jeg valgte MM Design</h1>
+            <p>Jeg fik en elevplads hos danaweb som titlen Ux - Webdesign , hvor jeg lærte hurtig deres cms system at kende, ret enkelt og nemt at bruge. <br><br>Det var der hvor jeg fik min intresse for at udvikle min evner i kodning og det var så der hvor multimediedesign kom ind.<br><br> Jeg skulle nemlig søge job efter min elevplads da de ikke havde plads til mig, også fandt jeg ud af der er var flere web-bureauer der søgte folk ind hos grafiske-bureauer</p>
+        </div>
+    </section>
+
+    <section class="ourWork ">
+        <h3 class="center">Portfolio</h3>
+
+        <ul class="portfolio">
+            <li class="small" style="background-image: url(assets/img/coast.jpg);"></li>
+            <li class="small" style="background-image: url(assets/img/island.jpg);"></li>
+            <li class="small" style="background-image: url(assets/img/balloon.jpg);"></li>
+            <li class="small" style="background-image: url(assets/img/mountain.jpg);"></li>
+            <li class="small" style="background-image: url(assets/img/balloon.jpg);"></li>
+            <li class="small" style="background-image: url(assets/img/mountain.jpg);"></li>
+            <li class="small" style="background-image: url(assets/img/mountain.jpg);"></li>
+            <li class="small" style="background-image: url(assets/img/balloon.jpg);"></li>
+            <li class="small" style="background-image: url(assets/img/mountain.jpg);"></li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h3 class="title">Join our newsletter</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+        <hr>
+
+        <form>
+            <input type="email" placeholder="Email">
+            <a href="#" class="btn">Subscribe now</a>
+        </form>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="miteget.js"></script>
+
+
+
+
 
 
 </body>

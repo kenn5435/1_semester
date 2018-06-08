@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Raleway, Arial;
+}
+
+.content {
+    height: 600px;
+    background-color: #e0e0e0;
+}
+
+.about {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px 0;
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+}
+
+.about h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.about h2,
+.about p {
+    transition: all 0.8s ease;
+}
+
+.about.hidden h2 {
+    opacity: 0;
+    transform: translate3d(0, 0, 400px) rotateY(-40deg);
+}
+
+.about.hidden p {
+    opacity: 0;
+    transform: translate3d(0, 0, 400px) rotateY(40deg);
+}
