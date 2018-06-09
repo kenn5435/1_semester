@@ -3,49 +3,69 @@
 
 <head>
     <!--- Google fonte --->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
     <meta charset="utf-8">
+
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="mainstyle.css">
+
+
     <title>Portfolio</title>
 
 
 </head>
+
 
 <body>
     <header>
         <h2><a href="index.html"><img src="logo/logo_hvid.png"></a></h2>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="#first">Hjem</a></li>
+                <li><a href="#second">Om mig</a></li>
+                <li><a href="#third">Cv</a></li>
+                <li><a href="#fourth">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
 
-    <div class="hero">
+    <div id="first" class="hero">
         <div class="background-image" style="background-image: url(img/HeroImg.png);"></div>
-        <h1>Velkommen til mit </h1>
-        <h3>1. semester som multimediedeisnger</h3>
+        <p class="txt">Hej fremmede Navnet er </p>
+        <h1>Kenny Kennedy</h1>
+        <h3 class="typewrite" data-period="2000" data-type='[ "UI/UX - Designer", "Web - Designer", "Grafisk Designer"]'>
+        </h3>
+
     </div>
 
-    <section class="omMig content hidden">
+    <section id="second" class="omMig content hidden">
 
-        <div class="left">
-            <h1>Om mig</h1>
+        <div class="left hidden">
+            <h2>Om mig</h2>
             <p>Mit navn er Kenny Kennedy, jeg er 24 år og studere til dagligt på Kea - Københavns Erhvervs Akademi som multimediedesigner. <br><br>Det har altid været en kæmpe passion for mig at være kreativ i form udvikling af websites, grafisk design og prodotyper af apps.<br><br> Jeg er frisk person som ikke bare giver op på sine projekter, jeg elsker at udvikle mig både fagligt og personligt. </p>
         </div>
 
-        <div class="middel">
-            <h1>Hvorfor jeg valgte MM Design</h1>
-            <p>Jeg fik en elevplads hos danaweb som titlen Ux - Webdesign , hvor jeg lærte hurtig deres cms system at kende, ret enkelt og nemt at bruge. <br><br>Det var der hvor jeg fik min intresse for at udvikle min evner i kodning og det var så der hvor multimediedesign kom ind.<br><br> Jeg skulle nemlig søge job efter min elevplads da de ikke havde plads til mig, også fandt jeg ud af der er var flere web-bureauer der søgte folk ind hos grafiske-bureauer</p>
+        <div class="right hidden">
+            <h2>Information</h2>
+            <p>Navn: Kenny Kennedy</p>
+            <p>Fødselsdato: 02/02 - 1994</p>
+            <p>Tlf: 26347780</p>
+            <p>Nationalitet: Danmark</p>
+            <p>Email: info@imkennykennedy.com</p>
         </div>
     </section>
 
-    <section class="ourWork ">
+    <section id="third" class="ourWork ">
         <h3 class="center">Portfolio</h3>
 
         <ul class="portfolio">
@@ -61,24 +81,28 @@
         </ul>
     </section>
 
-    <section class="contact">
-        <h3 class="title">Join our newsletter</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-        <hr>
+    <section id="fourth" class="footer">
+        <div class="footer-social-icons">
+            <h3>Follow us on</h3>
+            <ul class="social-icons">
+                <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-dribbble"></i></a></li>
+            </ul>
+        </div>
 
-        <form>
-            <input type="email" placeholder="Email">
-            <a href="#" class="btn">Subscribe now</a>
-        </form>
+
     </section>
+
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="miteget.js"></script>
-
-
-
-
 
 
 </body>

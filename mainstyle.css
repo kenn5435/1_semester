@@ -1,3 +1,17 @@
+/* HEX CODER
+
+
+#5512B8 Mørke Lilla
+#ABAEF5 Lysse Lilla
+#6B81F0 Lysse blå
+#F99426 Orange
+#252422 gråSort
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 /*-------------
  	General
 -------------*/
@@ -8,23 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto', sans-serif;
-
-}
-
-
-p {
-    font-family: 'Roboto', sans-serif;
-    color: #595771;
-
-}
-
-.omMig h1 {
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    line-height: 30px;
-    color: #FF3484;
-    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 * {
@@ -33,13 +31,87 @@ p {
     box-sizing: border-box;
 }
 
+body {
+    color: white;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    color: #252422;
+}
+
+.omMig h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 30px;
+    color: #6B81F0;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px 20px 0 20px;
+    letter-spacing: 2px;
+}
+
+.txt {
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 0px 0 5px 0;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+
+.content p {
+    line-height: 24px;
+    padding: 0px 20px 20px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+
+section p {
+    max-width: 800px;
+    text-align: left;
+    padding: 0 0px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.contact p {
+    padding: 10px 0 10px 0;
+}
+
+section h3.center {
+    color: #414a4f;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #6B81F0;
+    letter-spacing: 2px;
+}
+
+.footer h3 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+
+}
+
 img {
     width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 ul,
@@ -52,11 +124,9 @@ a {
     color: inherit;
     cursor: pointer;
     opacity: 0.9;
-    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 2px;
-
 }
 
 a:hover {
@@ -67,20 +137,22 @@ a.btn {
     color: #fff;
     border-radius: 4px;
     text-transform: uppercase;
-    background-color: #2196F3;
+    background-color: #F99426;
     font-weight: 800;
     text-align: center;
-}
+    font-family: 'Raleway', sans-serif;
 
+}
 
 
 hr {
     width: 150px;
     height: 2px;
-    background-color: #2196F3;
+    background-color: #F99426;
     border: 0;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
+
 
 section {
     display: flex;
@@ -117,25 +189,6 @@ section {
 }
 
 
-
-section h3.center {
-    color: #414a4f;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 35px;
-    text-align: center;
-}
-
-section p {
-    max-width: 800px;
-    text-align: left;
-    margin-bottom: 35px;
-    padding: 0 0px;
-    line-height: 24px;
-    font-size: 14px;
-}
-
 ul.portfolio {
     width: 100%;
     display: flex;
@@ -161,6 +214,10 @@ header {
     padding: 35px 100px 0;
 }
 
+header a {
+    font-family: 'Nunito', sans-serif;
+
+}
 
 header nav ul {
     display: flex;
@@ -208,7 +265,8 @@ header nav li:last-child {
     justify-content: center;
     min-height: 100vh;
     color: #fff;
-    text-align: left;
+    text-align: center;
+
 }
 
 .hero .background-image {
@@ -216,7 +274,7 @@ header nav li:last-child {
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
     z-index: -1;
 }
 
@@ -228,20 +286,20 @@ header nav li:last-child {
 
 .hero h1 {
     font-size: 60px;
-    font-weight: bolder;
+    font-weight: bold;
     margin-bottom: 15px;
     text-transform: uppercase;
-    letter-spacing: 3px;
-
+    letter-spacing: 1px;
 
 }
 
 .hero h3 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bolder;
     margin-bottom: 40px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
 
 
 }
@@ -255,7 +313,7 @@ header nav li:last-child {
 
     .hero h1 {
         font-size: 30px;
-        text-align: center;
+        text-align: left;
     }
 
     .hero h3 {
@@ -329,18 +387,9 @@ header nav li:last-child {
 }
 
 
-.txt {
-    flex-basis: 200px;
-    flex-grow: 1;
-    margin: 0 30px 0 0;
-    background: #fff;
-}
-
-
 .content {
     display: flex;
     flex-direction: row;
-    font-size: 20px;
     margin: auto;
     padding: 5px;
 }
@@ -349,16 +398,31 @@ header nav li:last-child {
     flex-grow: 1;
     margin: 10px;
     padding: 6px;
-
 }
+
+.left {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px rgba(211, 211, 211, 0.6);
+    margin: auto;
+}
+
+
 
 .content .right {
-    flex-grow: 1;
+    flex-grow: ;
     margin: 10px;
-
-
+    flex-basis: 600px;
 
 }
+
+
+.right {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px rgba(211, 211, 211, 0.6);
+}
+
 
 .content img {
     width: 20vh;
@@ -370,18 +434,6 @@ header nav li:last-child {
     margin: 10px;
     padding: 6px;
 
-}
-
-
-
-.content p {
-    font-size: 15px;
-    line-height: 22px;
-}
-
-.content .left a {
-    color: #7F73F6;
-    font-size: 14px;
 }
 
 
@@ -421,49 +473,107 @@ header nav li:last-child {
 }
 
 /*---------------------
- 	Contact Section
+ 	Footer  Section
 ---------------------*/
 
-.contact {
-    background-color: #f7f7f7;
+.footer {
+    background-color: #4E49A9;
     width: 100%;
-    margin: auto;
-    align-items: center;
-
-}
-
-.contact form {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 800px;
-    width: 80%;
-}
-
-.contact form input {
-    padding: 15px;
-    flex: 1;
-    margin-right: 30px;
-    font-size: 18px;
-    color: #555;
-}
-
-.contact form .btn {
-    padding: 18px 42px;
 }
 
 
 
-
-@media (max-width: 800px) {
-
-    .contact form input {
-        flex-basis: 100%;
-        margin: 0 0 20px 0;
-    }
+.footer-social-icons {
+    width: 40vh;
+    display: block;
+    margin: auto;
+    text-align: center;
 
 }
+
+.social-icon {
+    color: #fff;
+}
+
+ul.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    padding: 10px 14px;
+    transition: .5s;
+    color: #fff;
+}
+
+.fa-facebook:hover {
+    color: #3d5b99;
+}
+
+.fa-twitter {
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: .5s;
+    color: #fff;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+.fa-instagram {
+    padding: 10px 14px;
+    transition: .5s;
+    color: #fff;
+}
+
+.fa-instagram :hover {
+    color: #eb8231;
+}
+
+.fa-youtube {
+    padding: 10px 14px;
+    transition: .5s;
+    color: #fff;
+}
+
+.fa-youtube:hover {
+    color: #e64a41;
+}
+
+.fa-linkedin {
+    padding: 10px 14px;
+    transition: .5s;
+    color: #fff;
+}
+
+.fa-linkedin:hover {
+    color: #0073a4;
+}
+
+.fa-dribbble {
+    padding: 10px 9px;
+
+    transition: .5s;
+    color: #fff;
+}
+
+.fa-dribbble:hover {
+    color: #e25714;
+}
+
+
 
 /*---------------------
  	effects omMig Section
@@ -473,24 +583,67 @@ header nav li:last-child {
 
     transform-style: preserve-3d;
     transform: perspective(800px);
+    margin-bottom: 2em;
 }
+
+
 
 .omMig,
-h1,
-.omMig p,
-.omMig a {
-    transition: all 0.8s ease;
+.left,
+.right {
+    transition: all .9s ease;
 }
 
-.omMig.hidden h1 {
+.omMig.hidden .left {
     opacity: 0;
-    transform: translate3d(0, 0, 400px) rotateY(-40deg);
+
 }
 
-.omMig.hidden p {
+.omMig.hidden .right {
     opacity: 0;
-    transform: translate3d(0, 0, 400px) rotateY(40deg);
+
 }
+
+
+/*-------------------
+    return to top
+-------------------*/
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(78, 73, 169, 0.1);
+
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    display: none;
+
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgb(78, 73, 169);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
 
 ::selection {
     background-color: orange;
