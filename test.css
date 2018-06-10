@@ -40,6 +40,16 @@ p {
     color: #252422;
 }
 
+.resume h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 30px;
+    color: #6B81F0;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px 20px 0 20px;
+    letter-spacing: 2px;
+}
 
 .omMig h2 {
     text-transform: uppercase;
@@ -52,24 +62,12 @@ p {
     letter-spacing: 2px;
 }
 
-.cV h2 {
+.resume h3 {
     text-transform: uppercase;
     margin-bottom: 20px;
     line-height: 30px;
     color: #6B81F0;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    padding: 20px 20px 0 20px;
-    letter-spacing: 2px;
-}
-
-
-.cV2 h2 {
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    line-height: 30px;
-    color: #6B81F0;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     padding: 20px 20px 0 20px;
     letter-spacing: 2px;
@@ -123,7 +121,7 @@ p {
 
     .txt {
         text-align: center;
-        font-size: 15px;
+        font-size: 12px;
     }
 
 }
@@ -145,6 +143,11 @@ p {
 }
 
 
+section p {
+    max-width: 800px;
+    line-height: 24px;
+    font-size: 15px;
+}
 
 .contact p {
     padding: 10px 0 10px 0;
@@ -171,94 +174,6 @@ section h3.center {
     letter-spacing: 2px;
 
 }
-
-/* Iphone 7 plus */
-
-@media (max-width:414px) {
-
-    p {
-        font-family: 'Raleway', sans-serif;
-        color: #252422;
-    }
-
-
-    .omMig h2 {
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        line-height: 24px;
-        color: #6B81F0;
-        font-size: 15px;
-        font-family: 'Open Sans', sans-serif;
-        padding: 20px 20px 0 20px;
-        letter-spacing: 1px;
-    }
-    .cV h2 {
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        line-height: 24px;
-        color: #6B81F0;
-        font-size: 15px;
-        font-family: 'Open Sans', sans-serif;
-        padding: 20px 20px 0 20px;
-        letter-spacing: 1px;
-    }
-    .txt {
-        font-size: 11px;
-        margin-bottom: 15px;
-    }
-
-    .cV2 h2 {
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        line-height: 24px;
-        color: #6B81F0;
-        font-size: 15px;
-        font-family: 'Open Sans', sans-serif;
-        padding: 20px 20px 0 20px;
-        letter-spacing: 1px;
-    }
-
-    .hero h1 {
-        font-size: 20px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-
-    }
-
-    .hero h3 {
-        font-size: 15px;
-        margin-top: 15px;
-        font-weight: bolder;
-        text-transform: capitalize;
-        letter-spacing: 2px;
-        font-family: 'Nunito', sans-serif;
-    }
-
-
-    .content p {
-        line-height: 20px;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 13px;
-    }
-
-
-    section h3.center {
-        text-transform: uppercase;
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 35px;
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        color: #6B81F0;
-        letter-spacing: 2px;
-    }
-
-
-
-
-}
-
 
 img {
     width: 100%;
@@ -324,7 +239,7 @@ section {
 @media (max-width: 600px) {
 
     section {
-        padding: 20px 20px;
+        padding: 80px 30px;
     }
 
 }
@@ -349,7 +264,7 @@ header {
 
 header a {
     font-family: 'Nunito', sans-serif;
-    padding-top: 1em:
+    padding-top: -top: 1em:
 }
 
 header nav ul {
@@ -357,7 +272,7 @@ header nav ul {
 }
 
 header nav li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 header nav li:first-child {
@@ -367,6 +282,7 @@ header nav li:first-child {
 header nav li:last-child {
     margin-right: 0;
 }
+
 
 
 @media (max-width: 1000px) {
@@ -381,21 +297,10 @@ header nav li:last-child {
         flex-direction: column;
     }
 
-}
-
-
-@media (max-width:375px) {
-    header {
-        font-size: 14px;
-        margin: 0 0px;
+    header h2 {
+        margin-bottom: 15px;
     }
-    header nav li {
-        margin: 0 20px 0 0;
-    }
-
 }
-
-
 
 
 
@@ -529,8 +434,6 @@ header nav li:last-child {
 
 
 
-
-
 @media (max-width: 800px) {
 
     section.content.omMig {
@@ -540,41 +443,22 @@ header nav li:last-child {
 
 }
 
-/*----------------------
- 	cV Section
-----------------------*/
-
-.cV {
-    width: 70vw;
-    margin: auto;
-
-}
-
-@media (max-width: 800px) {
-
-    section.content.cV {
-        flex-direction: column;
-    }
-
-}
-
-/*----------------------
- 	cV Section
-----------------------*/
-
-.cV2 {
-    width: 70vw;
-    margin: auto;
-
-}
-
 @media (max-width: 900px) {
 
-    section.content.cV2 {
+    .resume {
         flex-direction: column;
+        align-items: center;
     }
 
+    section.content .resume h3 {
+        text-align: center;
+    }
 }
+
+
+/*----------------------
+ 	resume Section
+----------------------*/
 
 /*---------------------
  	Footer  Section
@@ -727,10 +611,6 @@ ul.social-icons {
 }
 
 
-
-/*-------------------
-    return to top
--------------------*/
 
 ::selection {
     background-color: orange;
