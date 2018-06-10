@@ -559,7 +559,7 @@ header nav li:last-child {
 }
 
 /*----------------------
- 	cV Section
+ 	cV2 Section
 ----------------------*/
 
 .cV2 {
@@ -683,38 +683,39 @@ ul.social-icons {
  	effects omMig Section
 ---------------------*/
 
-.ourWork {
-    transform-style: preserve-3d;
-    transform: perspective(800px);
-    margin-bottom: 2em;
+.omMig.hidden {
+    opacity: 0;
 }
 
-.omMig,
-.left,
-.right {
+.omMig {
     transition: all .4s ease;
 }
 
-.omMig.hidden .left {
-    opacity: 0;
-
-
-}
-
-.omMig.hidden .right {
-    opacity: 0;
-
-}
 
 .ourWork {
-    transition: all .4s ease;
+    transition: all 1.2s ease;
 }
 
 .ourWork.hidden {
     opacity: 0;
-
-
 }
+
+#cv {
+    transition: all .4s ease;
+}
+
+#cv.hidden {
+    opacity: 0;
+}
+
+#resumecv {
+    transition: all 1s ease;
+}
+
+#resumecv.hidden {
+    opacity: 0;
+}
+
 
 .footer {
     transition: all 1s ease;
@@ -722,8 +723,6 @@ ul.social-icons {
 
 .footer.hidden {
     opacity: 0;
-
-
 }
 
 
